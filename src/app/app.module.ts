@@ -20,7 +20,7 @@ import { AuthRememberComponent } from './auth-form/auth-remember.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [AuthFormComponent]
+  bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
