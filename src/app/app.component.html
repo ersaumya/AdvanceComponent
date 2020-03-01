@@ -1,15 +1,13 @@
 <div>
-  <!-- <app-auth-form (submitted)="createUser($event)">
-    <h3>Create account</h3>
-    <button type="submit">Join us</button>
-  </app-auth-form> -->
-  <app-auth-form (submitted)="LoginUser($event)">
-    <h3>Login account</h3>
-    <app-auth-remember (checked)="rememberUser($event)"></app-auth-remember>
-
-    <!--  //contentchildren -->
-    <!-- <app-auth-remember (checked)="rememberUser($event)"></app-auth-remember>
-    <app-auth-remember (checked)="rememberUser($event)"></app-auth-remember> -->
-    <button type="submit">Login</button>
-  </app-auth-form>
+  <!-- <button (click)="destroyComponent()">
+    Destroy
+  </button> -->
+  <!-- <button (click)="moveComponent()">
+    Move
+  </button> -->
+  <div #entry></div>
+  <!-- //custom template -->
+  <ng-template #tmpl let-name let-location="location">
+    {{name}}:{{location}}
+  </ng-template>
 </div>
